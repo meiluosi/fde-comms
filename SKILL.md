@@ -1,6 +1,6 @@
 ---
 name: fde-comms
-description: 帮 FDE 准备和复盘与人的关键沟通：客户访谈（会前提纲、会后纪要与复述、新问题）和向上汇报（高管一页纸、坏消息稿、预沟通）。适用于具体的人、会议或汇报稿，不用于行业入门、问题定义与诊断，也不替代现场；本版暂不含预期管理、向总部翻译、集成商与阻力应对。
+description: 帮 FDE 准备和复盘与人的关键沟通：客户访谈（会前提纲、会后纪要与复述、新问题）和向上汇报（高管一页纸、坏消息稿、预沟通）。以及客户预期管理（范围声明、能力讲解、验收三问）。适用于具体的人、会议、汇报稿或阶段；不用于行业入门、问题定义、Demo 与试点流程本身，也不替代现场；本版暂不含向总部翻译、集成商与阻力应对。
 ---
 
 # FDE 沟通助手
@@ -17,11 +17,12 @@ description: 帮 FDE 准备和复盘与人的关键沟通：客户访谈（会�
 | 访谈 · 会后 | 有笔记、录音转写或口述回忆 | 待确认纪要（含复述句）、证据条目、下一轮种子问题 |
 | 上行 · 汇报 | 要给高管/决策者一页纸 | 一页汇报稿，缺数字就标缺口 |
 | 上行 · 坏消息 | 有问题要报，纠结怎么说、何时说 | 四句稿、预沟通建议、核实清单 |
+| 预期 | 要立项、Demo 前后、上线前或遇到范围外请求，需管理客户预期 | “本期不做”声明、落差清单、验收三问、变更条目 |
 | 审稿 | 用户已有提纲、纪要或汇报稿 | 按影响排序的修改点，保留合理原文 |
 
-各模式动作见 [interview.md](references/interview.md)、[upward.md](references/upward.md)。所有模式先过 [core.md](references/core.md) 的沟通五问和共用骨架。
+各模式动作见 [interview.md](references/interview.md)、[upward.md](references/upward.md)、[expectations.md](references/expectations.md)。所有模式先过 [core.md](references/core.md) 的沟通五问和共用骨架。
 
-预期管理、给总部/研发的需求翻译、集成商与组织阻力不在本版模式内：用核心五问和骨架尽力帮忙，并明说“这部分尚未形成专门流程”，不要假装有。
+给总部/研发的需求翻译、集成商与组织阻力不在本版模式内：用核心五问和骨架尽力帮忙，并明说“这部分尚未形成专门流程”，不要假装有。
 
 ## 每轮工作
 
@@ -33,11 +34,12 @@ description: 帮 FDE 准备和复盘与人的关键沟通：客户访谈（会�
 
 - 要判断“这是不是真问题、该不该上 AI”，交给 fde-problem-framing；本 Skill 只负责把证据从人那里拿出来、把结论带上去。访谈产出按 [handoff.md](references/handoff.md) 转成证据条目。
 - 见客户前的行业准备、“拿图去被一线改”的图表本身，属于 fde-ramp；这里只管那场对话怎么开、怎么问、怎么记。
-- 没装另外两个也能独立运行。
+- Demo 的设计、彩排、复盘归 fde-demo，试点方案与成效判定归 fde-pilot；本 Skill 只管其前后与人的沟通，事实输入引用 `demo:` / `pilot:` 编号，见 handoff.md。
+- 没装其他 Skill 也能独立运行。
 
 ## 输出与退出
 
-按任务使用 [访谈提纲](templates/interview-guide.md)、[访谈纪要](templates/interview-notes.md)、[一页汇报](templates/one-pager.md)、[坏消息稿](templates/bad-news.md)。先给结论和最需要用户决定的一点，再给稿件。篇幅服务决策：汇报稿一页，细节放附件。
+按任务使用 [访谈提纲](templates/interview-guide.md)、[访谈纪要](templates/interview-notes.md)、[一页汇报](templates/one-pager.md)、[坏消息稿](templates/bad-news.md)、[预期声明](templates/expectations.md)。先给结论和最需要用户决定的一点，再给稿件。篇幅服务决策：汇报稿一页，细节放附件。
 
 篇幅：默认一到两屏，先结论和唯一需要用户定的一点；模板之外的附加产物（如证据条目）只在用户需要或要交接给 problem-framing 时附上；来源说明三行内写清“来自材料 / 推断 / 须对方确认”。
 
