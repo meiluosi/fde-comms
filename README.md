@@ -4,6 +4,20 @@ FDE Skill 系列的沟通篇：准备与复盘与人的关键对话。首版只�
 
 与系列其他 Skill 的分工：fde-ramp 管见客户前的行业认知；fde-problem-framing 管把需求变成有证据的问题定义；本 Skill 管信息怎样从人那里拿出来、结论怎样送上去。衔接见 [handoff.md](references/handoff.md)。没装另外两个也可独立运行。
 
+## FDE Skill 系列
+
+各 Skill 独立运行，通过手动读取的产物衔接，不互相依赖安装。典型顺序：ramp → problem-framing → demo → pilot，comms 贯穿各阶段。
+
+| Skill | 管什么 | 结论词 |
+|---|---|---|
+| [fde-ramp](https://github.com/meiluosi/fde-ramp) | 见客户前搭起行业基本盘，拿图去被一线改 | 自检分数 |
+| [fde-problem-framing](https://github.com/meiluosi/fde-problem-framing) | 把需求变成有证据的业务问题，比较 AI 与非 AI | Proceed / Investigate / Non-AI / Stop-Defer |
+| [fde-comms](https://github.com/meiluosi/fde-comms) | 与人的关键沟通：访谈、向上汇报、坏消息 | 无（产出文稿） |
+| [fde-demo](https://github.com/meiluosi/fde-demo) | 设计并复盘一次客户 Demo，换验证与信任 | Proceed / Iterate / Pivot / Stop-Defer |
+| [fde-pilot](https://github.com/meiluosi/fde-pilot) | 把 Demo 通过的方案做成可检验的试点并判定成效 | Proceed / Iterate / Pivot / Stop-Defer |
+
+跨 Skill 引用时加前缀保留原编号（`ramp:S01`、`framing:V2`、`demo:L3`、`pilot:M2`）；同名结论词含义随阶段不同，引用时写 `framing:Proceed`、`demo:Proceed`。编号、结论词、边界与回写规则的完整约定见 fde-demo 仓库的 `references/series.md`（私有仓库，链接需登录）。
+
 ## 安装
 把整个 `fde-comms` 文件夹（含 references/、templates/）放入宿主 skills 目录，开新会话。
 

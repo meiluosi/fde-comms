@@ -10,3 +10,5 @@
 | 4 · 边界审计 | 与 fde-problem-framing 对齐三层剥离、真实性信号、问题陈述的归属 | 无重复定义，交叉引用有效 |
 
 优先做第 1、2 阶段，再由使用中的问题驱动后续。
+
+> 与 fde-demo / fde-pilot 的边界：阶段 3“预期管理”中的 Demo 与试点阶段，只做话术；Demo 与试点流程本身由 fde-demo、fde-pilot 负责，见 references/handoff.md。
