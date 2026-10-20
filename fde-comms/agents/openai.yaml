@@ -1,4 +1,0 @@
-interface:
-  display_name: "FDE 沟通"
-  short_description: "准备与复盘客户访谈，起草高管一页汇报与坏消息稿"
-  default_prompt: "用 $fde-comms 帮我准备明天对客户一线的访谈提纲，先判断这场会的主要目的。"
