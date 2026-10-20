@@ -19,3 +19,7 @@
 ## 待办
 - 在宿主实机运行行为用例并记录。
 - 与 fde-problem-framing 对齐归属：真实性信号并入其 evidence.md。
+
+## v0.2.1 规则检查脚本
+新增 scripts/check_notes.py、check_onepager.py、check_expectations.py 与 commslib.py（仅标准库），23 项脚本测试加 5 项包结构测试，夹具在 tests/fixtures/。设计取舍：只查结构和规则，不验证真假（同 fde-demo、fde-problem-framing 的立场）；人名只做启发式；占位在草稿期是警告，`--final` 才是错误。
+对 v0.1.0/v0.2.0 的真实模型输出做冒烟，发现并修复两处误报：口径栏写“待确认”被当作空；坏消息稿解析被前文解释性句子干扰（现优先匹配编号条目）。已知限制：对整段对话回复运行可能因前后文产生误报，应只对稿件文件运行。

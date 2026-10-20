@@ -1,6 +1,6 @@
 # 推进路径
 
-当前：v0.2.0。阶段 1 已完成（15 条回归，见 tests/RESULTS-v0.1.0.md）；已新增“预期”模式；阶段 2 待真实使用，回填入口 tests/field-feedback/TEMPLATE.md。
+当前：v0.2.1（新增规则检查脚本）。阶段 1 已完成（15 条回归，见 tests/RESULTS-v0.1.0.md）；已新增“预期”模式；阶段 2 待真实使用，回填入口 tests/field-feedback/TEMPLATE.md。
 
 | 阶段 | 工作 | 完成标准 |
 |---|---|---|

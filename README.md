@@ -33,11 +33,21 @@ FDE Skill 系列的沟通篇：准备与复盘与人的关键对话。首版只�
 - SKILL.md：入口与模式路由
 - references/：核心、访谈、上行、衔接
 - templates/：提纲、纪要、一页汇报、坏消息
-- tests/：行为回归协议与包结构测试
+- scripts/：规则检查（纪要、一页汇报与坏消息稿、预期声明），仅标准库
+- tests/：行为回归协议、脚本单元测试与夹具、包结构测试
 - DEVELOPMENT.md：来源材料与方法修订
+
+## 规则检查
+```sh
+python3 scripts/check_notes.py 纪要.md [--for-summary] [--names 张三,李四]
+python3 scripts/check_onepager.py 汇报.md [--final]
+python3 scripts/check_onepager.py 坏消息.md --kind bad-news
+python3 scripts/check_expectations.py 预期声明.md [--final]
+```
+退出码 0 表示无错误，1 有错误；`--strict` 把警告也当失败，`--json` 输出机器可读结果。对**稿件文件**运行，不要对整段对话回复运行。只查结构和规则（复述句、记录类型、口径、指标数量、请求的人与期限、验收三问、占位等），不验证数字或原话是否真实，人名识别是启发式的，需人工确认。
 
 ## 验证
 ```sh
-python3 -m unittest discover -s tests -v
+python3 -I -m unittest discover -s tests -v
 ```
 结构测试只检查链接、前置信息与模板存在；它不能证明模型遵守流程，更不能证明真实访谈有效。行为测试见 tests/behavioral-cases.md，尚未实际运行。
