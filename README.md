@@ -51,3 +51,10 @@ python3 scripts/check_expectations.py 预期声明.md [--final]
 python3 -I -m unittest discover -s tests -v
 ```
 结构测试只检查链接、前置信息与模板存在；它不能证明模型遵守流程，更不能证明真实访谈有效。行为测试见 tests/behavioral-cases.md，尚未实际运行。
+
+## 参考与致谢
+
+本系列各 Skill 在方法设计上不同程度参考了《FDE:AI落地实战指南》，以及作者本人的 FDE 实践经历。各 Skill 的流程、模板、规则与脚本是在此基础上改写和扩展的方法。示例中的人物、数字与场景均为虚构，不是客户事实。
+
+## 许可
+MIT，见 [LICENSE](LICENSE)。
